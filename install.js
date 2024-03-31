@@ -6,7 +6,7 @@
 const sqlite3 = require("sqlite3").verbose();
 
 //Skapa ny databas
-//Döper den till "cv" och lägger i mappen "db"
+//Döper den till "cv" och lägger i mappen "db".
 const db = new sqlite3.Database("./db/cv.db");
 
 //Skapa tabellen för databasen
