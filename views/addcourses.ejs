@@ -17,6 +17,33 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <h1>Lägg till kurser</h1>
+        <p>Här kan du välja att lägga till kurser</p>
+
+        <form method="post" class="form">
+          <% if(typeof err !== "undefined" && err !== null && err !== "") { %>
+          <p class="err"><%= err %></p>
+          <% } %>
+          <label for="code">Kurskod:</label>
+          <br />
+          <input type="text" id="code" name="coursecode" />
+          <br />
+          <label for="name">Kursnamn:</label>
+          <br />
+          <input type="text" id="name" name="coursename" />
+          <br />
+          <label for="progression">Progression:</label>
+          <br />
+          <input type="text" id="progression" name="progression" />
+          <br />
+          <label for="syllabus">Länk till kursplan</label>
+          <br />
+          <input type="text" id="syllabus" name="syllabus" />
+          <br />
+          <input type="submit" value="Lägg till" class="btn" />
+        </form>
+      </main>
       <footer>
         <p>&copy;Andreas Nygård, 2024</p>
         <p>
