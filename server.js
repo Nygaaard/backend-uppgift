@@ -15,7 +15,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //Routing
 app.get("/", (req, res) => {
-  res.render("index");
+  //Skriv ut alla befintliga kuser från databasen
+  db.all("SELECT * FROM courses;", (err, rows) => {
+    if (err) {
+      console.error(err.message);
+    }
+    res.render("index", {
+      err: "",
+      rows: rows,
+    });
+  });
 });
 
 app.get("/addcourses", (req, res) => {
