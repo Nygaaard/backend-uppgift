@@ -1,0 +1,32 @@
+Databasen består av en tabell.
+Denna tabell består av 6 attribut. Dessa är:
+
+- id (primärnyckel)
+Denna måste vara unik för varje rad. Jag har implementerat "AUTOINCREMENT"
+som ger ett unikt värde automatiskt
+
+- coursecode
+Ska hålla information om kurskod. 
+
+- coursename
+Ska hålla information om kursnamn
+
+- progression
+Ska hålla information om progression
+
+- syllabus
+Ska hålla information om länk till kursplan
+
+- posted
+Ska hålla information om när kursen blev tillagd
+
+Basrelationer för databasen "CV"
+
+courses(
+    id(PK), 
+    coursecode, 
+    coursename, 
+    progression,
+    syllabus,
+    posted
+    )
