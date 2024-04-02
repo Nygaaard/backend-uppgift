@@ -43,7 +43,7 @@ body {
   margin: 0.5rem auto 1rem;
   background-color: #faf4f4;
 }
-.error {
+.err {
   color: red;
   font-weight: bold;
 }
@@ -135,6 +135,7 @@ footer {
 }
 .down {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media all and (max-width: 900px) {
