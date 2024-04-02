@@ -85,6 +85,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   min-height: 100px;
+  margin-top: 120px;
 }
 .name {
   text-align: center;
