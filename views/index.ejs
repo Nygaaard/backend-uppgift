@@ -25,11 +25,13 @@
         </nav>
       </header>
       <main>
-        <h1>Mina kurser</h1>
-        <p>
-          Detta är en överblick över de kurser jag har läst hittills i
-          programmet Webbutveckling på Mittuniversitetet.
-        </p>
+        <div class="myCourses">
+          <h1>Mina kurser</h1>
+          <p class="down">
+            Detta är en lista över de kurser jag har läst hittills i programmet
+            Webbutveckling på Mittuniversitetet.
+          </p>
+        </div>
         <% if(rows.length > 0) { %> <% rows.forEach((row) => {%>
         <article class="course-container">
           <p class="name"><%= row.coursename %></p>
@@ -54,7 +56,7 @@
           </div>
           <hr />
           <p>
-            <a href="/delete/<%= row.id %>" class="btn">Radera kurs</a>
+            <a href="/delete/<%= row.id %>" class="btn delete">Radera kurs</a>
           </p>
         </article>
         <% }); %> <% } %>

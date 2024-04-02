@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: #e3e4d0;
+  background-color: #fff;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.2em;
   line-height: 1.7em;
@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fff;
+  background-color: #ede3e3;
   min-height: 100px;
   list-style: none;
 }
@@ -34,4 +34,129 @@ body {
 }
 .menu li a:hover {
   color: #726f6f;
+}
+.course-container {
+  border: 1px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 0.4rem;
+  width: 60%;
+  margin: 0.5rem auto 1rem;
+  background-color: #faf4f4;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.btn {
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #181818;
+  padding: 2px 6px 2px 2px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.btn:hover {
+  background-color: #c0b9b9;
+}
+.btn:active {
+  background-color: #eeee;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+footer {
+  background-color: #f2eded;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100px;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.mid {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.7rem;
+}
+.syll-link {
+  color: #000;
+}
+.syll-link:hover {
+  color: #a09b9b;
+}
+.syll-link:active {
+  color: #000;
+}
+.form {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.delete {
+  background-color: #fff;
+}
+.about {
+  padding: 0.5rem;
+  width: 70%;
+  margin: 1rem auto;
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+.down {
+  text-align: center;
+}
+
+@media all and (max-width: 900px) {
+  .course-container {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  .course-container {
+    width: 100%;
+  }
+  .menu li a {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 0.9rem;
+  }
 }
